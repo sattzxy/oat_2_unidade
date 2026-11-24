@@ -1,0 +1,48 @@
+.topo {
+  background: var(--tinta);
+  color: #fff;
+}
+.topo-conteudo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.marca {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 0.35rem;
+}
+nav a {
+  color: #cfe3dc;
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+nav a:hover { color: #fff; }
+nav a.ativo {
+  background: var(--amarelo);
+  color: var(--tinta);
+}
+.conteudo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+.rodape {
+  text-align: center;
+  color: var(--cinza);
+  font-size: 0.85rem;
+  padding: 1.5rem 1rem 2rem;
+}

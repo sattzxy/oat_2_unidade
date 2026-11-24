@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-left: 6px solid var(--amarelo);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+.card.feita { border-left-color: var(--verde); background: #f6fbf9; }
+h3 { margin: 0 0 0.25rem; font-size: 1.1rem; }
+p { margin: 0; }
+.detalhes { color: var(--cinza); font-size: 0.92rem; }
+.co2 { margin-top: 0.35rem; }
+.acoes { display: flex; gap: 0.5rem; align-items: center; }
+.selo {
+  background: var(--verde-claro);
+  color: var(--verde);
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}

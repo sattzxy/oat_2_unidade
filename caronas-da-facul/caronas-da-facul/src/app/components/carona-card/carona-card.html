@@ -1,0 +1,24 @@
+<article class="card" [class.feita]="carona().concluida">
+  <div class="info">
+    <h3>{{ carona().origem }} → {{ carona().destino }}</h3>
+    <p class="detalhes">
+      {{ carona().horario | date: 'dd/MM/yyyy HH:mm' }}
+      · {{ carona().distanciaKm | number: '1.0-1' }} km
+      · {{ carona().passageiros }}
+      {{ carona().passageiros === 1 ? 'passageiro' : 'passageiros' }}
+    </p>
+    <p class="co2">
+      {{ carona().concluida ? 'CO₂ evitado:' : 'CO₂ a evitar:' }}
+      <strong>{{ co2Kg() | number: '1.2-2' }} kg</strong>
+    </p>
+  </div>
+
+  <div class="acoes">
+    @if (carona().concluida) {
+      <span class="selo">Concluída</span>
+    } @else {
+      <button type="button" (click)="concluir.emit(carona().id)">Concluir</button>
+    }
+    <button type="button" class="perigo" (click)="remover.emit(carona().id)">Remover</button>
+  </div>
+</article>

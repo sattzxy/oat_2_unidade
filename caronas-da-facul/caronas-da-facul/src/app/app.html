@@ -1,0 +1,17 @@
+<header class="topo">
+  <div class="topo-conteudo">
+    <a class="marca" routerLink="/">Caronas da Facul</a>
+    <nav aria-label="Principal">
+      <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Caronas</a>
+      <a routerLink="/impacto" routerLinkActive="ativo">Meu impacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo">
+  <router-outlet />
+</main>
+
+<footer class="rodape">
+  Os dados ficam salvos só neste navegador. ODS 11 e ODS 13.
+</footer>
